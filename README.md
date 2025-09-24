@@ -1,5 +1,5 @@
 # Charity Minds
-Idea by @Arylide fullstack devc class 2025
+Idea by @Arylide fullstack dev class 2025
 
 Charity Minds is a web platform designed to coordinate and streamline charity visits to children's homes. The platform aims to ensure that all kids' homes, including small and lesser-known ones, receive equal attention and support from groups and volunteers.
 
