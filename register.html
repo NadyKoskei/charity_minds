@@ -1,54 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register - Charity Minds</title>
-</head>
-<body>
+  </head>
 
+  <body>
     <nav>
-        <ul>
-            <li><a href="/login.html">LogIn</a></li>
-            <li><a href="/dashboard.html">Dashboard</a></li>
-            <li><a href="/index.html">Back Home</a></li>
-        </ul>
+      <ul>
+        <li><a href="/login.html">LogIn</a></li>
+        <li><a href="/dashboard.html">Dashboard</a></li>
+        <li><a href="/index.html">Back Home</a></li>
+      </ul>
     </nav>
 
     <form action="" metod="post">
+      <div>
         <label for="firstname">FirstName:</label>
-        <input type="text" placeholder="Enter FirstName" name="firstname"> <br> <br>
+        <input
+          type="text"
+          placeholder="Enter FirstName"
+          name="firstname"
+          required
+        />
+      </div>
 
+      <div>
         <label for="lastname">LastName:</label>
-        <input type="text" placeholder="Enter LastName" name="lastname"> <br> <br>
+        <input
+          type="text"
+          placeholder="Enter LastName"
+          name="lastname"
+          required
+        />
+      </div>
 
+      <div>
         <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-           <option value="female">Female</option>
-           <option value="male">Male</option>
-           <option value="other">Other</option>
-        </select> <br> <br>
+        <select id="gender" name="gender" required>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
+      <div>
         <label for="dob">Date Of Birth:</label>
-        <input type="date" id="dob" name="dob"> <br> <br>
+        <input type="date" id="dob" name="dob" required />
+      </div>
 
+      <div>
+        <label for="phone">Phone:</label>
+        <input
+          type="number"
+          id="phone"
+          placeholder="Enter Phone Number"
+          name="phone"
+          required
+        />
+      </div>
+
+      <div>
         <label for="username">UserName:</label>
-        <input type="text" placeholder="Enter UserName" name="username" > <br> <br>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter UserName"
+          name="username"
+          required
+        />
+      </div>
 
+      <div>
         <label for="email">Email:</label>
-        <input type="text" placeholder="Enter Email" name="email"> <br> <br>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Email"
+          name="email"
+          required
+        />
+      </div>
 
+      <div>
         <label for="password">Password:</label>
-        <input type="password" placeholder="******" name="password" > <br> <br>
+        <input
+          type="password"
+          id="password"
+          placeholder="******"
+          name="password"
+          required
+        />
+      </div>
 
+      <div>
         <label for="cpassword">Confirm Password:</label>
-        <input type="password" placeholder="******" name="cpassword" > <br> <br>
-        
-        <input type="submit" value="Register">
+        <input
+          type="password"
+          id="cpassword"
+          placeholder="******"
+          name="cpassword"
+          required
+        />
+      </div>
 
-        <p>Already have an account? <a href="/login.html">Go to LogIn</a></p>
+      <div>
+        <label for="terms">I agree to the Terms and Conditions</label>
+        <input type="checkbox" id="terms" name="terms" value="agree" required />
+      </div>
 
+      <div>
+        <label for="policy">I have read and agree to the Privacy Policy</label>
+        <input
+          type="checkbox"
+          id="policy"
+          name="policy"
+          value="agree"
+          required
+        />
+      </div>
+
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+
+      <p>Already have an account? <a href="/login.html">Go to LogIn</a></p>
     </form>
-
-</body>
+    
+  </body>
 </html>
