@@ -2,6 +2,7 @@ html,
 body {
   height: 100%; /* used to ensure that the body stretches to fill the entire height of the browser window */
   font-family: roboto;
+  background: #f6f7fb;
 }
 
 nav ul li {
@@ -12,9 +13,23 @@ nav ul li {
 /*PADDING clears area around the content, is inside the element 
 MARGIN clears area around the border, is outside the element */
 
+header {
+  background-color: #c2d6f7;
+  height: 70px;
+  padding: 10px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  float: left; /* makes the logo align to the left side of the header */
+  margin-top: 10px;
+}
+
 nav {
   text-align: right;
-  background-color: antiquewhite;
+
   height: 40px;
   padding: 10px;
 }
@@ -26,17 +41,20 @@ h1 {
 }
 
 form {
+  background: #ffffff;
   margin: auto; /*way to center an element horizontally within its container—but only if the element has a defined width.It tells the browser to automatically calculate the left and right margins.*/
   padding: 16px;
-  border: 1px solid;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
-  width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  width: 400px;
 }
 
 label {
   display: block;
   margin-bottom: 6px;
   font-size: 14px;
+  color: #666;
 }
 
 form > div {
@@ -45,10 +63,19 @@ form > div {
 
 input {
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
-  padding: 2px;
+  padding: 8px 2px;
   font-size: 14px;
+  background: #fff;
+  color: #222;
+}
+
+input[type="submit"] {
+  background: royalblue;
+  color: #fff;
+  border: none;
+  font-weight: bold;
 }
 
 #terms,
@@ -65,4 +92,13 @@ p {
 #h2 {
   color: green;
   font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+  font-style: bold;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border: #222 solid 1px;
 }
