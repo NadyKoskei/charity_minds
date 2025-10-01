@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%; /* used to ensure that the body stretches to fill the entire height of the browser window */
+  font-family: roboto;
+}
+
+nav ul li {
+  display: inline; /* makes the list items display in a horizontal line instead of vertically */
+  margin-right: 4px;
+}
+
+/*PADDING clears area around the content, is inside the element 
+MARGIN clears area around the border, is outside the element */
+
+nav {
+  text-align: right;
+  background-color: antiquewhite;
+  height: 40px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+form {
+  margin: auto; /*way to center an element horizontally within its container—but only if the element has a defined width.It tells the browser to automatically calculate the left and right margins.*/
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+form > div {
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+#terms,
+#policy {
+  display: inline;
+}
+
+p {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#h2 {
+  color: green;
+  font-size: 45px;
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>Register - Charity Minds</title>
   </head>
 
@@ -15,11 +17,14 @@
       </ul>
     </nav>
 
+    <h1>Register to Charity Minds</h1>
+
     <form action="" metod="post">
       <div>
         <label for="firstname">FirstName:</label>
         <input
           type="text"
+          id="firstname"
           placeholder="Enter FirstName"
           name="firstname"
           required
@@ -30,8 +35,20 @@
         <label for="lastname">LastName:</label>
         <input
           type="text"
+          id="lastname"
           placeholder="Enter LastName"
           name="lastname"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="username">UserName:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter UserName"
+          name="username"
           required
         />
       </div>
@@ -53,21 +70,10 @@
       <div>
         <label for="phone">Phone:</label>
         <input
-          type="number"
+          type="text"
           id="phone"
           placeholder="Enter Phone Number"
           name="phone"
-          required
-        />
-      </div>
-
-      <div>
-        <label for="username">UserName:</label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Enter UserName"
-          name="username"
           required
         />
       </div>
@@ -105,13 +111,12 @@
         />
       </div>
 
-      <div>
-        <label for="terms">I agree to the Terms and Conditions</label>
+      <div id="terms">
         <input type="checkbox" id="terms" name="terms" value="agree" required />
+        <label for="terms">I agree to the Terms and Conditions</label>
       </div>
 
-      <div>
-        <label for="policy">I have read and agree to the Privacy Policy</label>
+      <div id="policy">
         <input
           type="checkbox"
           id="policy"
@@ -119,14 +124,16 @@
           value="agree"
           required
         />
+        <label for="policy">I have read and agree to the Privacy Policy</label>
       </div>
 
       <div>
         <input type="submit" value="Register" />
       </div>
 
-      <p>Already have an account? <a href="/login.html">Go to LogIn</a></p>
     </form>
-    
+
+   <p>Already have an account? <a href="/login.html">Go to LogIn</a></p>
+
   </body>
 </html>
