@@ -27,7 +27,7 @@
 
     <h1>Register to Charity Minds</h1>
 
-    <form action="" metod="post">
+    <form action="" method="post">
       <div>
         <label for="firstname">FirstName:</label>
         <input
@@ -61,7 +61,7 @@
         />
       </div>
 
-      <div>
+      <div id="gender-div">
         <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
           <option value="female">Female</option>
@@ -119,15 +119,14 @@
         />
       </div>
 
-      <div id="terms">
-        <input type="checkbox" id="terms" name="terms" value="agree" required />
+      <div id="terms-div" >
+        <input type="checkbox" name="terms" value="agree" required />
         <label for="terms">I agree to the Terms and Conditions</label>
       </div>
 
-      <div id="policy">
+      <div id="policy-div" >
         <input
           type="checkbox"
-          id="policy"
           name="policy"
           value="agree"
           required
