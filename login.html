@@ -11,55 +11,54 @@
     <title>LogIn - Charity Minds</title>
   </head>
   <body>
-    <header>
+    <main>
+      <header>
+        <img src="/images/logo.png" alt="Charity Minds Logo" id="logo-img" />
 
-     <img src="/images/logo.png" alt="Charity Minds Logo" id="logo-img" />
+        <p id="logo">CHARITY MINDS</p>
 
-      <p id="logo">Charity Minds</p>
+        <nav>
+          <ul>
+            <li><a href="/register.html">Register</a></li>
+            <li><a href="/dashboard.html">Dashboard</a></li>
+            <li><a href="/index.html">Back Home</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <nav>
-        <ul>
-          <li><a href="/register.html">Register</a></li>
-          <li><a href="/dashboard.html">Dashboard</a></li>
-          <li><a href="/index.html">Back Home</a></li>
-        </ul>
-      </nav>
+      <h1>LogIn to your account</h1>
 
-    </header>
+      <form action="" method="post">
+        <div>
+          <label for="username">UserName:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter UserName"
+            name="username"
+          />
+        </div>
 
-    <h1>LogIn to your account</h1>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="******"
+            name="password"
+          />
+        </div>
 
-    <form action="" method="post">
-      <div>
-        <label for="username">UserName:</label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Enter UserName"
-          name="username"
-        />
-      </div>
+        <div>
+          <input type="submit" value="LogIn" />
+        </div>
+      </form>
 
-      <div>
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="******"
-          name="password"
-        />
-      </div>
+      <p>Don't have an account? <a href="/register.html">Register Here</a></p>
 
-      <div>
-        <input type="submit" value="LogIn" />
-      </div>
-    </form>
-
-    <p>Don't have an account? <a href="/register.html">Register Here</a></p>
-
-    <footer>
-      <p>&copy; 2025 Charity Minds. All rights reserved Arylide.</p>
-    </footer>
-    
+      <footer>
+        <p>&copy; 2025 Charity Minds. All rights reserved Arylide.</p>
+      </footer>
+    </main>
   </body>
 </html>
