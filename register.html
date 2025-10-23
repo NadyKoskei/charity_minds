@@ -12,7 +12,11 @@
   </head>
 
   <body>
+    
     <header>
+
+     <img src="/images/logo.png" alt="Charity Minds Logo" id="logo-img" />
+
       <p id="logo">Charity Minds</p>
 
       <nav>
@@ -22,7 +26,6 @@
           <li><a href="/index.html">Back Home</a></li>
         </ul>
       </nav>
-      
     </header>
 
     <h1>Register to Charity Minds</h1>
@@ -70,7 +73,7 @@
         </select>
       </div>
 
-      <div>
+      <div id="dob-div">
         <label for="dob">Date Of Birth:</label>
         <input type="date" id="dob" name="dob" required />
       </div>
@@ -119,18 +122,13 @@
         />
       </div>
 
-      <div id="terms-div" >
-        <input type="checkbox" name="terms" value="agree" required />
+      <div id="terms-div">
+        <input type="checkbox" name="terms" value="agree" required id="terms" />
         <label for="terms">I agree to the Terms and Conditions</label>
       </div>
 
-      <div id="policy-div" >
-        <input
-          type="checkbox"
-          name="policy"
-          value="agree"
-          required
-        />
+      <div id="policy-div">
+        <input type="checkbox" name="policy" value="agree" required id="policy" />
         <label for="policy">I have read and agree to the Privacy Policy</label>
       </div>
 
@@ -140,5 +138,10 @@
     </form>
 
     <p>Already have an account? <a href="/login.html">Go to LogIn</a></p>
+
+    <footer>
+      <p>&copy; 2025 Charity Minds. All rights reserved Arylide.</p>
+    </footer>
+
   </body>
 </html>

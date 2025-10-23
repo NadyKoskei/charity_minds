@@ -22,28 +22,43 @@ MARGIN clears area around the border, is outside the element */
 
 header {
   background-color: #c2d6f7;
-  height: 70px;
+  height: 65px;
   padding: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-img {
+  width: 70px;
+  float: left; /* makes the logo align to the left side of the header */
+  margin-right: 10px; /* to create some space between the logo and the text */
+  margin-top: 3px;
 }
 
 #logo {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   color: #333;
-  float: left; /* makes the logo align to the left side of the header */
-  margin-top: 10px;
+
+  /*float: left; /* makes the logo align to the left side of the header */
+
+  margin-top: 8px;
 }
 
 nav {
   text-align: right;
-  height: 40px;
-  padding: 10px;
+
+  /* height: 360px;*/
+
+  padding: 19px;
 }
 
 h1 {
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 16px;
 }
 
 form {
@@ -54,6 +69,8 @@ form {
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -64,8 +81,7 @@ label {
 }
 
 #terms-div > label,
-#policy-div > label,
-#gender-div > label {
+#policy-div > label {
   display: inline; /* makes the label appear next to the checkbox instead of on a new line */
   margin-right: 10px; /* adds some space between the checkbox and the label */
 }
@@ -111,15 +127,37 @@ p {
 }
 
 table {
-  width: 100%;
+  width: 99%;
   margin-top: 10px;
   border: #222 solid 1px;
+
+  border-collapse: collapse;
+}
+
+.table-div {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+th,
+td {
+  padding: 10px;
+
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5; /* Light gray background for headers */
+  font-weight: bold; /* Make header text bold */
 }
 
 .data-div {
-  margin: 20px;
+  margin: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .data-div > div {
@@ -133,16 +171,73 @@ table {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  margin-bottom: 15px;
 }
 
 .admin {
-  margin: 20px;
+  margin: 15px;
   background-color: #c2d6f7;
-  width: 300px;
-  height: 60px;
+  width: 25%;
+  height: 90px;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+}
+
+footer {
+  background-color: #b7b5b5;
+  color: #fff;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  #logo {
+    font-size: 18px;
+  }
+
+  .admin {
+    width: 90%;
+    height: auto;
+  }
+
+  .admin h1 {
+    font-size: 20px;
+  }
+
+  .data-div > div {
+    height: 100px;
+  }
+
+  .data-div h1 {
+    font-size: 24px;
+  }
+
+  .data-div h2 {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
 }
