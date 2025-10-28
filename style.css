@@ -19,7 +19,7 @@ body {
   background: #f6f7fb;
 }
 
-main{
+main {
   padding-bottom: 70px; /* to prevent footer overlapping content */
 }
 
@@ -33,7 +33,7 @@ header {
   padding: 10px;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@ input[type="checkbox"] {
 
 input[type="submit"] {
   background: #a80065;
-  color:#fff ;
+  color: #fff;
   border: none;
   font-weight: bold;
 }
@@ -151,7 +151,6 @@ table {
   max-width: 100%; /* Ensures the table container doesn't exceed the width of its parent */
   overflow-x: auto;
 }
-
 
 th,
 td {
@@ -191,12 +190,13 @@ th {
   margin-bottom: 15px;
 }
 
-.data-div h1, h2 {
+.data-div h1,
+h2 {
   font-size: 28px;
   color: #fff;
 }
 
-.admin h1{
+.admin h1 {
   font-size: 24px;
 }
 
